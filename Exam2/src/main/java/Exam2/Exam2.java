@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class Exam2 {
 
 	public static void main(String[] args) {
-		System.out.println("ÇëÊäÈë¹¤×Ê£º");
+		System.out.println("è¯·è¾“å…¥å·¥èµ„ï¼š");
 		Scanner scanner=new Scanner(System.in);
 		
 		float m;
 		try {
 			m = scanner.nextFloat();
 			if(m<=0){
-				System.out.println("ÇëÊäÈëÕıÈ·µÄ¹¤×Êºó²¢ÖØĞÂÔËĞĞ³ÌĞò");
+				System.out.println("è¯·è¾“å…¥æ­£ç¡®çš„å·¥èµ„åå¹¶é‡æ–°è¿è¡Œç¨‹åº");
 				return;
 			}
 		} catch (Exception e) {
-			System.out.println("ÇëÊäÈëÕıÈ·µÄ¹¤×Êºó²¢ÖØĞÂÔËĞĞ³ÌĞò");
+			System.out.println("è¯·è¾“å…¥æ­£ç¡®çš„å·¥èµ„åå¹¶é‡æ–°è¿è¡Œç¨‹åº");
 			e.printStackTrace();
 			return;
 		}
@@ -24,8 +24,8 @@ public class Exam2 {
 		float m1=m-3500;
 		float s=0;
 		if(m<3500){
-			System.out.println("Äã²»ÓÃ½»Ë°");
-			//µÍÓÚ1500
+			System.out.println("ä½ éœ€ç¼´çº³çš„ç¨è´¹ä¸º0");
+			//ä½äº1500
 		}else if(m1<=1500){
 			s=(float) (m1*0.03);
 			//1500-4500
@@ -46,7 +46,7 @@ public class Exam2 {
 		}else if(m1>80000){
 			s=(float) (45+300+900+6500+4000+8750+(m1-80000)*0.45);
 		}
-		System.out.println("ËùĞè½ÉÄÉµÄË°·ÑÊÇ£º"+s+"Ôª");
+		System.out.println("æ‰€éœ€ç¼´çº³çš„ç¨è´¹æ˜¯ï¼š"+s+"å…ƒ");
 	}
 
 	
